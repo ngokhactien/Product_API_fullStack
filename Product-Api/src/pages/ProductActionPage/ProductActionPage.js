@@ -21,7 +21,7 @@ class ProductActionPage extends Component {
             var id = match.params.id;
             this.props.onEditProduct(id);
         }
-    }
+    };
 
     componentWillReceiveProps(nextProps){
         if(nextProps && nextProps.itemEditing){
@@ -32,9 +32,8 @@ class ProductActionPage extends Component {
                 txtPrice : itemEditing.price,
                 chkbStatus : itemEditing.status
             });
-            console.log(this.state.id);
         }
-    }
+    };
 
     onChange = (e) => {
         var target = e.target;

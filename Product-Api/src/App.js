@@ -1,10 +1,11 @@
 import React from 'react';
+import 'react-dom';
 import './App.css';
 import Menu from './components/Menu/Menu';
 import routes from './routes';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
-export default function App () {
+export default function App (props) {
     const showContentMenus = (routes) => {
         var result = null;
         if (routes.length > 0) {

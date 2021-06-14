@@ -34,7 +34,6 @@ export const actDeleteProduct = (id) => {
 
 //add
 export const actAddProductRequest = (product) => {
-    console.log(product);
     return dispatch => {
         return callApi('products', 'POST', product).then(res => {
             dispatch(actAddProduct(res.data));
@@ -65,7 +64,6 @@ export const actGetProduct = (product) => {
 }
 // cập nhập
 export const actUpdateProductRequest = (product) => {
-    console.log(product);
     return dispatch => {
         return callApi(`products/${product.id}`, 'PUT', product).then(res => {
             dispatch(actUpdateProduct(res.data));
