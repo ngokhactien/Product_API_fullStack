@@ -25,7 +25,6 @@ const  deleteProduct =  async(req, res) =>{
 }
 
 const  updateProduct =  async(req, res) =>{
-    console.log('update');
     const result= await Product.findById(req.params.id );
     if(!result){
         throw new Error('An error occurred');

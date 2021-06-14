@@ -1,19 +1,20 @@
 {
-  "name": "app-api",
-  "version": "0.0.0",
-  "private": true,
+  "name": "Back-End",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
+    "express": "^4.17.1",
     "mongoose": "^5.12.13",
-    "morgan": "~1.9.1",
     "nodemon": "^2.0.7"
   }
 }
