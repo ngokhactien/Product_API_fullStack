@@ -1,26 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Menu from './components/Menu/Menu';
 import routes from './routes';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 
-class App extends Component {
-    render() {
-        return (
-            <Router>
-                <div>
-                    <Menu />
-                    <div className="container">
-                        <div className="row">
-                            {this.showContentMenus(routes)}
-                        </div>
-                    </div>
-                </div>
-            </Router>
-        );
-    }
-
-    showContentMenus = (routes) => {
+export default function App () {
+    const showContentMenus = (routes) => {
         var result = null;
         if (routes.length > 0) {
             result = routes.map((route, index) => {
@@ -35,8 +20,18 @@ class App extends Component {
             });
         }
         return <Switch>{result}</Switch>;
-    }
+    };
 
-}
-
-export default App;
+    return (
+        <Router>
+            <div>
+                <Menu />
+                <div className="container">
+                    <div className="row">
+                        {showContentMenus(routes)}
+                    </div>
+                </div>
+            </div>
+        </Router>
+    );
+};
