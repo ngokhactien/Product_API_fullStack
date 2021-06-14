@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone 6 Plus",
+      "price": 400,
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "SamSung galaxy S7",
+      "price": 400,
+      "status": false
+    },
+    {
+      "name": "1231312",
+      "price": "123",
+      "status": "",
+      "id": 8
+    },
+    {
+      "name": "2222222222213123213",
+      "price": "3",
+      "status": "",
+      "id": 9
+    }
+  ]
+}
