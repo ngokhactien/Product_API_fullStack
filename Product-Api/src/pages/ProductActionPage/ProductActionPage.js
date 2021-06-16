@@ -51,7 +51,7 @@ class ProductActionPage extends Component {
         var product = {
             id : id,
             name : txtName,
-            price : txtPrice,
+            price : txtPrice === '' ? '0' : txtPrice ,
             status : chkbStatus
         };
         if (id) {

@@ -13,6 +13,7 @@ function ProductListPage(props){
 
     const onDelete = (id) => {
         props.onDeleteProduct(id);
+        props.fetchAllProducts();
     }
 
     const showProducts = (products) => {

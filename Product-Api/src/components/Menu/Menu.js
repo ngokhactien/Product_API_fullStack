@@ -36,7 +36,7 @@ const MenuLink = ({ label, to, activeOnlyWhenExact }) => {
 export default function Menu (){
     return (
         <div className="navbar navbar-default">
-            <a className="navbar-brand">CALL API</a>
+            <a href className="navbar-brand">Tien And Friend</a>
             <ul className="nav navbar-nav">
                 {showMenus(menus)}
             </ul>

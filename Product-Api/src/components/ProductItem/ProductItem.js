@@ -10,9 +10,10 @@ export default function ProductItem(props) {
     const onDelete = (id) => {
         if (confirm('Bạn chắc chắn muốn xóa ?')) { //eslint-disable-line
             console.log(id);
-            this.props.onDelete(id);
+            props.onDelete(id);
         }
     }
+    
     return (
         <tr>
             <td>{index + 1}</td>
@@ -36,6 +37,7 @@ export default function ProductItem(props) {
                     className="btn btn-danger"
                     onClick={() => onDelete(product._id)}
                 >
+                    
                     Xóa
                 </button>
             </td>
